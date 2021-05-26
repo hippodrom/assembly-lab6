@@ -39,7 +39,7 @@ read_data:
     
     mov r10, #0           @ i = 0
     mov r9, #250
-    mov r9, r9, LSL #4    @ 4000 emails    
+    @mov r9, r9, LSL #4    @ 4000 emails    
 
 loop:
 
