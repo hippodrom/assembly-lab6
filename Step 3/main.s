@@ -19,7 +19,7 @@ main:
     push {fp, lr}
     add fp, sp, #4
 
-    bl count_email
+    bl read_data
     
     @ make sure to return 0
     mov r0, #0

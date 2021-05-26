@@ -60,15 +60,14 @@ close:
   bl free
 
 end:
-  mov r0, r4
-  mov r1, r6  @ return index
+  mov r0, r4  @ return index
   sub sp, fp, #4
   pop	{r4, r5, r6, fp, pc}
 
 returnZero:
-	mov r4, #0   @ else return 0
+	mov r4, #-999   @ else return 0
   b close
 
 returnOne:
-	mov r4, #1   @ return 1
+	mov r4, r6   @ return 1
   b close

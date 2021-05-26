@@ -63,7 +63,7 @@ loop:
     ldr r0, [fp, #-12]
     
     @ read email into dictionary.txt
-    bl read_email
+    bl count_email
     
     add r10, r10, #1
     b loop

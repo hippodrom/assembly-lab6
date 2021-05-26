@@ -65,9 +65,9 @@ body_loop:
     ldr r0, [fp, #-16]
 
     @ match returns a 1 if not unique, so count
-    @ 0 = word is unique skip
+    @ #-999 = word is unique skip
     bl match
-    cmp r0, #0
+    cmp r0, #-999
     beq next_word
     
     ldr r0, [fp, #-16]
